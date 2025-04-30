@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="posts-womens.css">
+
+  <title>دعم المرأة</title>
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo">
+      <img src="./assets/logo1.jpg" alt="Logo">
+      <span>GenIA</span>
+    </div>
+    <div class="nav-links">
+      <a href="front.html">الصفحة الرئيسية</a>
+      
+    </div>
+    <button class="register-btn">سجل الدخول</button>
+  </div>
+
+  <div class="main-container">
+    <!-- Online Persons Sidebar -->
+    <aside class="online-sidebar">
+      <h3>الأشخاص المتصلون</h3>
+      <ul class="online-list">
+        <li>
+          <img src="./assets/image.png" alt="User 1" class="online-profile">
+          <span>أسماء</span>
+        </li>
+        <li>
+          <img src="./assets/image.png" alt="User 2" class="online-profile">
+          <span>فاطمة</span>
+        </li>
+        <li>
+          <img src="./assets/image.png" alt="User 3" class="online-profile">
+          <span>سارة</span>
+        </li>
+      </ul>
+    </aside>
+
+  <!-- Community Posts Section -->
+  <section class="posts-container">
+    <h2>منشورات المجتمع</h2>
+    <!-- Add Publication Section -->
+  <div class="add-publication">
+    <button class="toggle-btn" onclick="togglePublication()">✍️ إضافة منشور</button>
+    <div class="publication-form" id="publicationForm" style="display: none;">
+      <textarea class="publication-input" placeholder="اكتب منشورك هنا..."></textarea>
+      <button class="submit-publication">نشر</button>
+    </div>
+  </div>
+    <!-- Post 1 -->
+    <div class="post-box">
+      <div class="post-header">
+        <img src="./assets/image.png" alt="User Profile" class="profile-image">
+        <div class="post-info">
+          <h3>تجربتي مع التوتر</h3>
+          <p class="timestamp">منذ 3 ساعات</p>
+        </div>
+      </div>
+      <p class="post-content">مررت بفترة صعبة بسبب ضغط العمل، وتعلمت كيف أعتني بصحتي النفسية...</p>
+      <div class="post-actions">
+        <button class="like-btn">❤️ إعجاب</button>
+        <button class="comment-btn">💬 تعليق</button>
+      </div>
+      <div class="comments-section">
+        <textarea class="comment-input" placeholder="أضف تعليقًا..."></textarea>
+        <button class="submit-comment">إرسال</button>
+        <ul class="comments-list">
+          <li>تعليق رائع جدًا!</li>
+          <li>شكرًا لمشاركة تجربتك.</li>
+        </ul>
+      </div>
+    </div>
+  
+    <!-- Post 2 -->
+    <div class="post-box">
+      <div class="post-header">
+        <img src="./assets/image.png" alt="User Profile" class="profile-image">
+        <div class="post-info">
+          <h3>رحلتي مع الحمل</h3>
+          <p class="timestamp">منذ يوم</p>
+        </div>
+      </div>
+      <p class="post-content">أشارككم تجربتي خلال الحمل وكيف تعاملت مع التغيرات الجسدية والنفسية...</p>
+      <div class="post-actions">
+        <button class="like-btn">❤️ إعجاب</button>
+        <button class="comment-btn">💬 تعليق</button>
+      </div>
+      <div class="comments-section">
+        <textarea class="comment-input" placeholder="أضف تعليقًا..."></textarea>
+        <button class="submit-comment">إرسال</button>
+        <ul class="comments-list">
+          <li>تجربة ملهمة!</li>
+          <li>شكرًا على النصائح القيمة.</li>
+        </ul>
+      </div>
+    </div>
+  
+    <!-- Post 3 -->
+    <div class="post-box">
+      <div class="post-header">
+        <img src="./assets/image.png" alt="User Profile" class="profile-image">
+        <div class="post-info">
+          <h3>كيفية تحقيق التوازن بين العمل والحياة</h3>
+          <p class="timestamp">منذ أسبوع</p>
+        </div>
+      </div>
+      <p class="post-content">تعلمت كيفية إدارة وقتي بشكل أفضل لتحقيق التوازن بين العمل والحياة الشخصية...</p>
+      <div class="post-actions">
+        <button class="like-btn">❤️ إعجاب</button>
+        <button class="comment-btn">💬 تعليق</button>
+      </div>
+      <div class="comments-section">
+        <textarea class="comment-input" placeholder="أضف تعليقًا..."></textarea>
+        <button class="submit-comment">إرسال</button>
+        <ul class="comments-list">
+          <li>نصائح رائعة!</li>
+          <li>أحببت هذا المنشور.</li>
+        </ul>
+      </div>
+    </div>
+    <button class="more-btn"> المزيد</button>
+  </section>
+    <!-- Add more community post-boxes as needed -->
+  </section>
+
+  <!-- Groups Sidebar -->
+<aside class="groups-sidebar">
+  <h3>مجموعات</h3>
+  <ul class="groups-list">
+    <li>
+      <img src="./assets/image.png" alt="Group 1" class="group-icon">
+      <span>مجموعة الصحة</span>
+    </li>
+    <li>
+      <img src="./assets/image.png" alt="Group 2" class="group-icon">
+      <span>مجموعة التعليم</span>
+    </li>
+    <li>
+      <img src="./assets/image.png" alt="Group 3" class="group-icon">
+      <span>مجموعة الرياضة</span>
+    </li>
+  </ul>
+</aside>
+
+  <!-- Styles for the sections -->
+  <script src="toggle.js"></script>
+</body>
+</html>

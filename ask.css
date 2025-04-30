@@ -1,0 +1,266 @@
+
+    /* Navbar Styling */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 30px;
+        background-color: #ffffff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      
+      .logo img {
+        height: 50px;
+        width: 50px;
+        border-radius: 0;
+      }
+      
+      .logo span {
+        font-size: 24px;
+        font-weight: bold;
+        color: #f48a8a;
+      }
+      
+      .nav-links {
+        display: flex;
+        gap: 20px;
+      }
+      
+      .nav-links a {
+        text-decoration: none;
+        color: #333;
+        font-size: 16px;
+        padding: 5px 10px;
+        transition: color 0.3s ease;
+      }
+      
+      .nav-links a:hover {
+        color: #f48a8a;
+      }
+      
+      .register-btn {
+        background-color: #f48a8a;
+        color: #fff;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      .register-btn:hover {
+        background-color: #e06767;
+      }
+    /* Toggle Button */
+.toggle-btn {
+    display: block;
+    margin: 20px auto; /* Center the button */
+    background-color: #be185d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .toggle-btn:hover {
+    background-color: #9c1452;
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+  
+  /* Toggle Button */
+.toggle-btn {
+    display: block;
+    margin: 20px auto; /* Center the button */
+    background-color: #be185d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .toggle-btn:hover {
+    background-color: #9c1452;
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+  
+  /* Ask Doctor Form */
+  .ask-doctor-form {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .ask-doctor-form textarea {
+    width: 100%;
+    max-width: 600px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    resize: none;
+  }
+  
+  .ask-doctor-form button {
+    background-color: #be185d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ask-doctor-form button:hover {
+    background-color: #9c1452;
+  }
+/* Questions Section */
+.questions-section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .questions-section h3 {
+    font-size: 1.5rem;
+    color: #be185d;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .questions-boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between questions */
+  }
+  
+  .question-box {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow for publication style */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add hover effect */
+  }
+  
+  .question-box:hover {
+    transform: translateY(-5px); /* Slightly lift the box on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+  }
+  
+  .question-box h4 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .reply {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  .reply strong {
+    color: #be185d;
+  }
+  
+  /* Read More Button */
+  .read-more-btn {
+    background-color: #be185d;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .read-more-btn:hover {
+    background-color: #9c1452;
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+  /*online*/
+  /* Main Container */
+.main-container {
+    display: flex;
+    gap: 20px; /* Space between sidebar and questions section */
+    padding: 20px;
+  }
+  
+  /* Online Doctors Sidebar */
+  .online-doctors-sidebar {
+    width: 200px; /* Fixed width for the sidebar */
+    background-color: #f9f9f9;
+    padding: 10px; /* Add padding inside the box */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .online-doctors-sidebar h3 {
+    font-size: 1.2rem;
+    color: #be185d;
+    margin-bottom: 15px;
+    text-align: center;
+    
+  }
+  
+  .online-doctors-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .online-doctors-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Space between doctors */
+  }
+  
+  .doctor-profile {
+    width: 40px; /* Profile image size */
+    height: 40px; /* Profile image size */
+    border-radius: 50%; /* Circular profile image */
+    margin-right: 10px; /* Space between image and name */
+    object-fit: cover;
+    border: 2px solid #be185d; /* Border around the image */
+  }
+  
+  .online-doctors-list span {
+    font-size: 1rem;
+    color: #333;
+  }
+  /* المزيد Button */
+.more-btn {
+    display: block;
+    margin: 20px auto; /* Center the button horizontally */
+    background-color: #be185d; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Add padding for spacing */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 1rem; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+  }
+  
+  .more-btn:hover {
+    background-color: #9c1452; /* Darker background on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+  }

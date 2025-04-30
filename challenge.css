@@ -1,0 +1,351 @@
+ /* General Styles */
+ body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 30px;
+  background-color: #ffe4e1;;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 50px;
+  width: 50px;
+  border-radius: 0;
+}
+
+.logo span {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f48a8a;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #f48a8a;
+}
+
+.register-btn {
+  background-color: #f48a8a;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register-btn:hover {
+  background-color: #e06767;
+}
+/*score*/
+.challenge-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 275px;
+  }
+  
+  .personal-score {
+    display: flex;
+    align-items: center; /* Align image and text vertically */
+    justify-content: center; /* Center the content horizontally */
+    background-color: #ffe4e1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .score-header {
+    display: flex;
+    align-items: center; /* Align image and text vertically */
+    gap: 20px; /* Add space between the image and text */
+  }
+  
+  .account-image {
+    width: 80px; /* Set the width of the image */
+    height: 80px; /* Set the height of the image */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image fits within the circle */
+    border: 2px solid #be185d; /* Optional: Add a border around the image */
+  }
+  
+  .score-details h2 {
+    font-size: 2rem;
+    color: #be185d;
+    margin-bottom: 10px;
+  }
+  
+  .score-details p {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  .score-details .rank {
+    font-weight: bold;
+    color: #4CAF50;
+  }
+  /* Challenge Section (Main Page) */
+  .challenges-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .challenges-boxes {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px; /* Add spacing between the boxes */
+    align-items: center; /* Center the boxes horizontally */
+  }
+  
+  .challenge-box {
+    width: 80%; /* Adjust the width of each box */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: right;
+    position: relative;
+  }
+  
+  .challenge-info h4 {
+    font-size: 1.5rem;
+    color: #be185d;
+    margin-bottom: 10px;
+  }
+  
+  .challenge-info p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .challenge-score {
+    margin-top: 15px;
+  }
+  
+  .challenge-score span {
+    font-size: 1.2rem;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .progress-bar {
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 10px;
+    width: 100%;
+  }
+  
+  .progress {
+    background-color: #be185d;
+    height: 100%;
+    border-radius: 5px;
+  }
+  
+  .more-btn {
+    margin-top: 15px;
+    background-color: #be185d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .more-btn:hover {
+    background-color: #a61c50;
+  }
+
+ /*leadboards*/
+ .main-container {
+    display: flex;
+    gap: 20px; /* Space between leaderboard and challenges */
+    align-items: flex-start; /* Align items at the top */
+    padding: 20px;
+  }
+  
+  .leaderboard {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: right;
+  }
+  
+  .leaderboard h3 {
+    font-size: 1.8rem;
+    color: #be185d;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 2px solid #f1f1f1;
+    padding-bottom: 10px;
+  }
+  
+  .leaderboard ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .leaderboard li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+  
+  .leaderboard li:hover {
+    background-color: #ffe4e1;
+  }
+  
+  .leaderboard .rank {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #4CAF50;
+  }
+  
+  .leaderboard .name {
+    font-size: 1.1rem;
+    color: #333;
+    flex: 1;
+    text-align: center;
+  }
+  
+  .leaderboard .score {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #be185d;
+  }
+  #leaderboard {
+    transition: all 0.3s ease-in-out;
+  }
+  .challenges-section {
+    flex: 2; /* Allow challenges section to take up 2 parts of the space */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    order: 2;
+  }
+  
+  .challenges-boxes {
+    display: flex;
+    flex-direction: column; /* Stack challenges vertically */
+    gap: 20px;
+  }
+  
+  .challenge-box {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: right;
+  }
+  
+  .challenge-info h4 {
+    font-size: 1.5rem;
+    color: #be185d;
+    margin-bottom: 10px;
+  }
+  
+  .challenge-info p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .challenge-score {
+    margin-top: 15px;
+  }
+  
+  .challenge-score span {
+    font-size: 1.2rem;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .progress-bar {
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 10px;
+    width: 100%;
+  }
+  
+  .progress {
+    background-color: #be185d;
+    height: 100%;
+    border-radius: 5px;
+  }
+  
+  .more-btn {
+    margin-top: 15px;
+    background-color: #be185d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .more-btn:hover {
+    background-color: #a61c50;
+  }
+  .more-btn2 {
+    display: block; /* Ensure the button is treated as a block element */
+    margin: 20px auto; /* Center horizontally and add vertical spacing */
+    background-color: #be185d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  .more-btn2:hover {
+    background-color: #a61c50; /* Darker shade on hover */
+  }

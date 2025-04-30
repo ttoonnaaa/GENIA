@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>التحديات والأنشطة</title>
+  <link rel="stylesheet" href="challenge.css">
+
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="logo">
+      <img src="./assets/logo1.jpg" alt="Logo">
+      <span>GenIA</span>
+    </div>
+    <div class="nav-links">
+      <a href="front.html">الصفحة الرئيسية</a>
+      
+    </div>
+    <button class="register-btn">سجل الدخول</button>
+  </div>
+  <section class="challenge-details" id="challenge1">
+    <div class="challenge-container">
+   
+      <div class="personal-score">
+        <div class="score-header">
+          <img src="./assets/image.png" alt="Account Image" class="account-image" />
+          <div class="score-details">
+            <h2>النتيجة: 85</h2>
+            <p>الترتيب: <span class="rank">3</span></p>
+            <p>🏅 الميدالية: برونزية</p>
+          </div>
+        </div>
+      </div>
+  </section>
+  <button class="more-btn2" onclick="toggleLeaderboard()"> قائمة المتصدرين</button>
+
+  <section class="main-container">
+    <!-- Leaderboard Section -->
+
+    <div class="leaderboard">
+      <h3>قائمة المتصدرين:</h3>
+      <ol>
+        <li>
+          <span class="rank">1</span>
+          <span class="name">المتسابق 1</span>
+          <span class="score">95</span>
+        </li>
+        <li>
+          <span class="rank">2</span>
+          <span class="name">المتسابق 2</span>
+          <span class="score">90</span>
+        </li>
+        <li>
+          <span class="rank">3</span>
+          <span class="name">المتسابق 3</span>
+          <span class="score">85</span>
+        </li>
+      </ol>
+    </div>
+   
+  <section class="challenges-section">
+    <h3>التحديات والأنشطة</h3>
+    <div class="challenges-boxes">
+      <!-- Challenge 1 -->
+      <div class="challenge-box">
+        <div class="challenge-info">
+          <h4>التحدي الأول</h4>
+          <p>وصف التحدي الأول هنا بشكل مختصر.</p>
+        </div>
+        <div class="challenge-score">
+          <span>النتيجة: 85</span>
+          <div class="progress-bar">
+            <div class="progress" style="width: 85%;"></div>
+          </div>
+        </div>
+        <button class="more-btn">مزيد</button>
+      </div>
+  
+      <!-- Challenge 2 -->
+      <div class="challenge-box">
+        <div class="challenge-info">
+          <h4>التحدي الثاني</h4>
+          <p>وصف التحدي الثاني هنا بشكل مختصر.</p>
+        </div>
+        <div class="challenge-score">
+          <span>النتيجة: 90</span>
+          <div class="progress-bar">
+            <div class="progress" style="width: 90%;"></div>
+          </div>
+        </div>
+        <button class="more-btn">مزيد</button>
+      </div>
+  
+      <!-- Challenge 3 -->
+      <div class="challenge-box">
+        <div class="challenge-info">
+          <h4>التحدي الثالث</h4>
+          <p>وصف التحدي الثالث هنا بشكل مختصر.</p>
+        </div>
+        <div class="challenge-score">
+          <span>النتيجة: 80</span>
+          <div class="progress-bar">
+            <div class="progress" style="width: 80%;"></div>
+          </div>
+        </div>
+        <button class="more-btn">مزيد</button>
+      </div>
+    </div>
+  </section>
+  </section>
+  <button class="more-btn2">مزيد</button>
+  <!-- Challenge Details Section (for example, challenge 1) -->
+  <script src="toggle.js"></script>

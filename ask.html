@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>اسألي طبيبة</title>
+  <link rel="stylesheet" href="ask.css"/>
+  
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo">
+      <img src="./assets/logo1.jpg" alt="Logo">
+      <span>GenIA</span>
+    </div>
+    <div class="nav-links">
+      <a href="front.html">الصفحة الرئيسية</a>
+      
+    </div>
+    <button class="register-btn">سجل الدخول</button>
+  </div>
+
+  <!-- Ask Doctor Form -->
+<section class="ask-doctor-form-container">
+  <button class="toggle-btn" onclick="toggleAskForm()">✍️ اكتبي سؤالك الطبي</button>
+  <section class="ask-doctor-form" id="askDoctorForm" style="display: none;">
+    <h2>اكتبي سؤالك الطبي</h2>
+    <form>
+      <textarea placeholder="اكتبي سؤالك هنا..." required></textarea>
+      <button type="submit">إرسال السؤال</button>
+    </form>
+  </section>
+</section>
+<div class="main-container">
+  <!-- Online Doctors Sidebar -->
+  <aside class="online-doctors-sidebar">
+    <h3>الأطباء المتصلون</h3>
+    <ul class="online-doctors-list">
+      <li>
+        <img src="./assets/image.png" alt="Doctor 1" class="doctor-profile">
+        <span>د. أحمد</span>
+      </li>
+      <li>
+        <img src="./assets/image.png" alt="Doctor 2" class="doctor-profile">
+        <span>د. فاطمة</span>
+      </li>
+      <li>
+        <img src="./assets/image.png" alt="Doctor 3" class="doctor-profile">
+        <span>د. سارة</span>
+      </li>
+    </ul>
+  </aside>
+
+  <!-- Questions Section -->
+ 
+<section class="questions-section">
+  <h3>أسئلة المرضى وإجابات الطبيبات</h3>
+  <div class="questions-boxes">
+    <!-- Question 1 -->
+    <div class="question-box">
+      <h4>سؤال: كيف يمكنني التعامل مع التوتر أثناء العمل؟</h4>
+      <p class="reply">
+        <strong>إجابة الطبيبة:</strong> يمكنك التعامل مع التوتر من خلال ممارسة تمارين التنفس العميق، وأخذ فترات راحة قصيرة خلال العمل، وممارسة الرياضة بانتظام.
+      </p>
+      <button class="read-more-btn">قراءة المزيد</button>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="question-box">
+      <h4>سؤال: ما هي النصائح الغذائية للحامل في الأشهر الأولى؟</h4>
+      <p class="reply">
+        <strong>إجابة الطبيبة:</strong> من المهم تناول وجبات متوازنة تحتوي على البروتينات، الفيتامينات، والمعادن. تجنبي الأطعمة الدهنية والمشروبات الغازية، واحرصي على شرب كميات كافية من الماء.
+      </p>
+      <button class="read-more-btn">قراءة المزيد</button>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="question-box">
+      <h4>سؤال: هل يمكنني ممارسة الرياضة أثناء الحمل؟</h4>
+      <p class="reply">
+        <strong>إجابة الطبيبة:</strong> نعم، يمكنك ممارسة الرياضة الخفيفة مثل المشي أو اليوغا، ولكن يجب استشارة طبيبتك قبل البدء بأي نشاط رياضي للتأكد من أنه آمن لحالتك.
+      </p>
+      <button class="read-more-btn">قراءة المزيد</button>
+    </div>
+  </div>
+  <button class="more-btn"> المزيد</button>
+</section>
+</section>
+  </section>
+  <script src="toggle.js"></script>
+
+</body>
+</html>

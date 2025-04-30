@@ -1,0 +1,390 @@
+
+    /* General styling */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      color: #333;
+      text-align: right;
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 30px;
+        background-color: #ffffff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      
+      .logo img {
+        height: 50px;
+        width: 50px;
+        border-radius: 0;
+      }
+      
+      .logo span {
+        font-size: 24px;
+        font-weight: bold;
+        color: #f48a8a;
+      }
+      
+      .nav-links {
+        display: flex;
+        gap: 20px;
+      }
+      
+      .nav-links a {
+        text-decoration: none;
+        color: #333;
+        font-size: 16px;
+        padding: 5px 10px;
+        transition: color 0.3s ease;
+      }
+      
+      .nav-links a:hover {
+        color: #f48a8a;
+      }
+      
+      .register-btn {
+        background-color: #f48a8a;
+        color: #fff;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      .register-btn:hover {
+        background-color: #e06767;
+      }
+h1 {
+      font-size: 2rem;
+      color: #be185d;
+      text-align: center; /* Centers text inside h1 */
+    }
+/*onlines*/
+
+/* Main Container */
+.main-container {
+  display: flex;
+  gap: 10px; /* Space between sidebar and posts */
+  padding: 20px;
+}
+
+/* Online Sidebar */
+/* Main Container */
+.main-container {
+  display: flex;
+  gap: 30px; /* Reduce space between sidebar and posts */
+  padding: 20px;
+}
+
+/* Online Sidebar */
+.online-sidebar {
+  width: 350px; /* Reduce the width of the sidebar */
+  background-color: #f9f9f9;
+  padding: 20px; /* Add padding for spacing */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  position: relative; /* Keep it in its current flow */
+}
+
+.online-sidebar h3 {
+  font-size: 1rem; /* Reduce font size */
+  color: #be185d;
+  margin-bottom: 20px; /* Add spacing below the heading */
+  text-align: center;
+}
+
+.online-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.online-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px; /* Reduce spacing between items */
+}
+
+.online-profile {
+  width: 30px; /* Set profile image size */
+  height: 30px; /* Set profile image size */
+  border-radius: 50%; /* Make the image circular */
+  margin-right: 8px; /* Add spacing between image and text */
+  object-fit: cover;
+  border: 2px solid #be185d; /* Add a border around the image */
+}
+
+.online-list span {
+  font-size: 0.8rem; /* Reduce font size */
+  color: #333;
+}
+
+/* Posts Container */
+.posts-container {
+  flex: 3; /* Posts section takes up 3 parts of the space */
+  background-color: #f9f9f9;
+  padding: 100px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+    /* Posts Container */
+   /* Post Actions (Likes and Comments) */
+/* Posts Container */
+.posts-container {
+  max-width: 800px;
+  margin: 0px ;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.posts-container h2 {
+  font-size: 2rem;
+  color: #be185d;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Post Box */
+.post-box {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.post-box:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Post Header */
+.post-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.profile-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+  object-fit: cover;
+  border: 2px solid #be185d;
+}
+
+.post-info h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 0;
+}
+
+.post-info .timestamp {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* Post Content */
+.post-content {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* Post Actions */
+.post-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.post-actions button {
+  background-color: #be185d;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.post-actions button:hover {
+  background-color: #9c1452;
+}
+
+/* Comments Section */
+.comments-section {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.comment-input {
+  width: 100%;
+  padding: 0px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  resize: none;
+}
+
+.submit-comment {
+  background-color: #be185d;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 5px;
+}
+
+.submit-comment:hover {
+  background-color: #9c1452;
+}
+
+.comments-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.comments-list li {
+  background-color: #fff;
+  padding: 8px 10px;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 0.9rem;
+  color: #555;
+}
+/*boyyom publication*/
+/* Add Publication Section */
+.add-publication {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.toggle-btn {
+  background-color: #be185d;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background-color: #9c1452;
+}
+
+.publication-form {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.publication-input {
+  width: 100%;
+  padding: 0px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  resize: none;
+}
+
+.submit-publication {
+  background-color: #be185d;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-publication:hover {
+  background-color: #9c1452;
+}
+/* Groups Sidebar */
+.groups-sidebar {
+  width: 200px; /* Set a fixed width */
+  background-color: #f9f9f9;
+  padding: 10px; /* Add padding for spacing */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  margin-top: 20px; /* Add spacing below the online sidebar */
+}
+
+.groups-sidebar h3 {
+  font-size: 1rem; /* Reduce font size */
+  color: #be185d;
+  margin-bottom: 10px; /* Add spacing below the heading */
+  text-align: center;
+}
+
+.groups-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.groups-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px; /* Reduce spacing between items */
+}
+
+.group-icon {
+  width: 30px; /* Set group icon size */
+  height: 30px; /* Set group icon size */
+  border-radius: 50%; /* Make the icon circular */
+  margin-right: 8px; /* Add spacing between icon and text */
+  object-fit: cover;
+  border: 2px solid #be185d; /* Add a border around the icon */
+}
+
+.groups-list span {
+  font-size: 0.8rem; /* Reduce font size */
+  color: #333;
+}
+/* المزيد Button */
+.more-btn {
+  display: block;
+  margin: 20px auto; /* Center the button horizontally */
+  background-color: #be185d; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Add padding for spacing */
+  border-radius: 8px; /* Rounded corners */
+  font-size: 1rem; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+}
+
+.more-btn:hover {
+  background-color: #9c1452; /* Darker background on hover */
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+}

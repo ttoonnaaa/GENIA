@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>منشورات طبية</title>
+  <link rel="stylesheet" href="medical.css">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">
+      <img src="./assets/logo1.jpg" alt="Logo">
+      <span>GenIA</span>
+    </div>
+    <div class="nav-links">
+      <a href="front.html">الصفحة الرئيسية</a>
+      <a href="#articles">المقالات</a>
+      <a href="#contact">تواصل معنا</a>
+    </div>
+    <button class="register-btn">سجل الدخول</button>
+
+  </div>
+
+   <!-- Articles Section -->
+   <section class="articles-section" id="articles">
+    <h1>منشورات طبية</h1>
+    <div class="articles-grid">
+     <!-- Articles Section -->
+ 
+      <!-- Article 1 -->
+    <div class="article-card">
+        <h2>أهم الحميات الفعالة لتكيس المبايض (PCOS)</h2>
+        <p class="article-intro">
+          تكيس المبايض (متلازمة المبيض متعدد الكيسات) هو اضطراب هرموني شائع بين النساء في سن الإنجاب، ويؤثر على الدورة الشهرية، الوزن، الخصوبة، وحتى الحالة النفسية. تعتبر الحميات الغذائية المتوازنة من أنجح الطرق الطبيعية لتخفيف الأعراض وتحسين التوازن الهرموني.
+        </p>
+        <button class="read-more-btn" onclick="toggleArticle(this)">اقرأ المزيد</button>
+        <div class="article-content" style="display: none;">
+          <h3>1. الحمية منخفضة الكربوهيدرات (Low-Carb Diet)</h3>
+          <p>الفوائد: تقلل من مقاومة الإنسولين وتساعد على خسارة الوزن.</p>
+          <p>تشمل: الخضروات، البيض، اللحوم، الدهون الصحية (زيت الزيتون، الأفوكادو).</p>
+          <p>تجنب: السكريات، الخبز الأبيض، المعجنات.</p>
+          <!-- Add more content as needed -->
+        </div>
+      </div>
+  
+      <!-- Article 2 -->
+      <div class="article-card">
+        <h2>علامات الحمل المؤكدة بالتفصيل</h2>
+        <p>الحمل هو رحلة مليئة بالتغيرات الجسدية والنفسية، وقد تبدأ أعراضه المبكرة قبل حتى إجراء اختبار الحمل! لكن ما هي العلامات الأكثر دقة التي تشير إلى حدوث الحمل؟ وكيف يمكن تمييزها عن أعراض الدورة الشهرية أو الأمراض الأخرى؟ هذا الدليل المفصل سيجيب على كل تساؤلاتك.</p>
+        <a href="article1.html" class="read-more-btn">اقرأ المزيد</a>
+      </div>
+  
+      <!-- Article 3 -->
+      <div class="article-card">
+        <h2>كيفية التعامل مع الام الدورة الشهرية</h2>
+        <p>تُعتبر آلام الدورة الشهرية (عسر الطمث) من الظواهر الجسدية الشائعة بين النساء، حيث تعاني منها نسبة كبيرة في مختلف مراحل العمر. تتفاوت شدتها بين انزعاج بسيط وتقلصات حادة تعيق الحياة اليومية</p>
+        <a href="article2.html" class="read-more-btn">اقرأ المزيد</a>
+      </div>
+    </div>
+<!-- Footer -->
+<footer>
+    <h2>تواصل معنا</h2>
+    <form class="contact-form" id="contact">
+      <label for="name">الاسم:</label>
+      <input type="text" id="name" name="name" placeholder="أدخل اسمك" required>
+  
+      <label for="email">البريد الإلكتروني:</label>
+      <input type="email" id="email" name="email" placeholder="أدخل بريدك الإلكتروني" required>
+  
+      <label for="message">الرسالة:</label>
+      <textarea id="message" name="message" rows="4" placeholder="أدخل رسالتك" required></textarea>
+  
+      <button type="submit" class="submit-btn">إرسال</button>
+    </form>
+    <p>جميع الحقوق محفوظة © 2025</p>
+  </footer>
+  <script scr="toggle.js"></script>
+</body>
+</html>
